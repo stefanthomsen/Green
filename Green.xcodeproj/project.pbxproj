@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11449E15212B834E00229938 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11449E14212B834E00229938 /* User.swift */; };
 		11DD5D312128BC3900D4EBE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D302128BC3900D4EBE5 /* AppDelegate.m */; };
 		11DD5D372128BC3A00D4EBE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DD5D352128BC3A00D4EBE5 /* Main.storyboard */; };
 		11DD5D3A2128BC3A00D4EBE5 /* Green.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D382128BC3A00D4EBE5 /* Green.xcdatamodeld */; };
@@ -17,8 +18,10 @@
 		11DD5D5C2128C04600D4EBE5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D5B2128C04600D4EBE5 /* LoginViewController.m */; };
 		11DD5D5E212B5CB500D4EBE5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 11DD5D5D212B5CB400D4EBE5 /* README.md */; };
 		11DD5D61212B5D5E00D4EBE5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D60212B5D5E00D4EBE5 /* RegistrationViewController.swift */; };
-		3A2FB754D873BDEAB345EABC /* libPods-Green.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 107FD9106B78E8E27EB959DE /* libPods-Green.a */; };
-		D536000D4A7D6DE345708801 /* libPods-GreenTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4A41302B73FE047C5E9542 /* libPods-GreenTests.a */; };
+		11DD5D66212B75DB00D4EBE5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DD5D65212B75DB00D4EBE5 /* Home.storyboard */; };
+		11DD5D68212B76BC00D4EBE5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D67212B76BC00D4EBE5 /* HomeViewController.swift */; };
+		6B9695D913A22977B24C1E25 /* Pods_GreenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F2A111386DB8F4A04DA9A7 /* Pods_GreenTests.framework */; };
+		756F25FAF4CB74482B750CF5 /* Pods_Green.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1228906FFCF9654F85057B3 /* Pods_Green.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		107FD9106B78E8E27EB959DE /* libPods-Green.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Green.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11449E14212B834E00229938 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		11DD5D2C2128BC3900D4EBE5 /* Green.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Green.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DD5D2F2128BC3900D4EBE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11DD5D302128BC3900D4EBE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,11 +53,15 @@
 		11DD5D5B2128C04600D4EBE5 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		11DD5D5D212B5CB400D4EBE5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		11DD5D60212B5D5E00D4EBE5 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		11DD5D65212B75DB00D4EBE5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		11DD5D67212B76BC00D4EBE5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		11DD5D6B212B7D4600D4EBE5 /* Green-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Green-Swift.h"; sourceTree = "<group>"; };
 		421D83372B4A612CCF462631 /* Pods-GreenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenTests/Pods-GreenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87F2A111386DB8F4A04DA9A7 /* Pods_GreenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0B7CA87193072D24076997 /* Pods-Green.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green.release.xcconfig"; path = "Pods/Target Support Files/Pods-Green/Pods-Green.release.xcconfig"; sourceTree = "<group>"; };
 		A0D08D833520CD41D34EB1E4 /* Pods-Green.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Green/Pods-Green.debug.xcconfig"; sourceTree = "<group>"; };
+		C1228906FFCF9654F85057B3 /* Pods_Green.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Green.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5488BA27D98EBD0ECB863BE /* Pods-GreenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenTests/Pods-GreenTests.release.xcconfig"; sourceTree = "<group>"; };
-		ED4A41302B73FE047C5E9542 /* libPods-GreenTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GreenTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2FB754D873BDEAB345EABC /* libPods-Green.a in Frameworks */,
+				756F25FAF4CB74482B750CF5 /* Pods_Green.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,13 +77,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D536000D4A7D6DE345708801 /* libPods-GreenTests.a in Frameworks */,
+				6B9695D913A22977B24C1E25 /* Pods_GreenTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11449E13212B834200229938 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11449E14212B834E00229938 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		11DD5D232128BC3900D4EBE5 = {
 			isa = PBXGroup;
 			children = (
@@ -101,17 +116,20 @@
 		11DD5D2E2128BC3900D4EBE5 /* Green */ = {
 			isa = PBXGroup;
 			children = (
+				11449E13212B834200229938 /* Model */,
+				11DD5D62212B75AB00D4EBE5 /* Home */,
 				11DD5D592128C03300D4EBE5 /* Login */,
 				11DD5D5F212B5D4900D4EBE5 /* Registration */,
 				11DD5D2F2128BC3900D4EBE5 /* AppDelegate.h */,
 				11DD5D302128BC3900D4EBE5 /* AppDelegate.m */,
-				11DD5D352128BC3A00D4EBE5 /* Main.storyboard */,
+				11DD5D562128BE0800D4EBE5 /* Green-Bridging-Header.h */,
+				11DD5D6B212B7D4600D4EBE5 /* Green-Swift.h */,
 				11DD5D3B2128BC3D00D4EBE5 /* Assets.xcassets */,
-				11DD5D3D2128BC3D00D4EBE5 /* LaunchScreen.storyboard */,
 				11DD5D402128BC3D00D4EBE5 /* Info.plist */,
 				11DD5D412128BC3D00D4EBE5 /* main.m */,
+				11DD5D352128BC3A00D4EBE5 /* Main.storyboard */,
+				11DD5D3D2128BC3D00D4EBE5 /* LaunchScreen.storyboard */,
 				11DD5D382128BC3A00D4EBE5 /* Green.xcdatamodeld */,
-				11DD5D562128BE0800D4EBE5 /* Green-Bridging-Header.h */,
 			);
 			path = Green;
 			sourceTree = "<group>";
@@ -142,11 +160,36 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		11DD5D62212B75AB00D4EBE5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				11DD5D63212B75BA00D4EBE5 /* Controller */,
+				11DD5D64212B75C600D4EBE5 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		11DD5D63212B75BA00D4EBE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11DD5D67212B76BC00D4EBE5 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11DD5D64212B75C600D4EBE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11DD5D65212B75DB00D4EBE5 /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1385407133AE4F511921D486 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				107FD9106B78E8E27EB959DE /* libPods-Green.a */,
-				ED4A41302B73FE047C5E9542 /* libPods-GreenTests.a */,
+				C1228906FFCF9654F85057B3 /* Pods_Green.framework */,
+				87F2A111386DB8F4A04DA9A7 /* Pods_GreenTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,7 +216,7 @@
 				11DD5D282128BC3900D4EBE5 /* Sources */,
 				11DD5D292128BC3900D4EBE5 /* Frameworks */,
 				11DD5D2A2128BC3900D4EBE5 /* Resources */,
-				7CD5DDAE47740E88D5972E5C /* [CP] Copy Pods Resources */,
+				EFB83BACB33ADD754A11991E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11DD5D3F2128BC3D00D4EBE5 /* LaunchScreen.storyboard in Resources */,
+				11DD5D66212B75DB00D4EBE5 /* Home.storyboard in Resources */,
 				11DD5D3C2128BC3D00D4EBE5 /* Assets.xcassets in Resources */,
 				11DD5D5E212B5CB500D4EBE5 /* README.md in Resources */,
 				11DD5D372128BC3A00D4EBE5 /* Main.storyboard in Resources */,
@@ -281,24 +325,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7CD5DDAE47740E88D5972E5C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Green/Pods-Green-resources.sh",
-				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Green/Pods-Green-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ADBF108AE251F1810976BA62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +343,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EFB83BACB33ADD754A11991E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Green/Pods-Green-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Green/Pods-Green-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -329,6 +381,8 @@
 				11DD5D422128BC3D00D4EBE5 /* main.m in Sources */,
 				11DD5D312128BC3900D4EBE5 /* AppDelegate.m in Sources */,
 				11DD5D61212B5D5E00D4EBE5 /* RegistrationViewController.swift in Sources */,
+				11DD5D68212B76BC00D4EBE5 /* HomeViewController.swift in Sources */,
+				11449E15212B834E00229938 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +459,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -463,6 +518,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -487,6 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G28XQH8SA5;
 				INFOPLIST_FILE = Green/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -496,6 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.com.Green;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Green/Green-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Green/Green-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,6 +567,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G28XQH8SA5;
 				INFOPLIST_FILE = Green/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,6 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.com.Green;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Green/Green-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Green/Green-Swift.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

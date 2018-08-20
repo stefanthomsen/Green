@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import <Green/Green-Swift.h>
+#import <Realm/Realm.h>
 
 @interface LoginViewController ()
 
@@ -34,6 +36,18 @@
     if ([self isCredencialsValid]){
         //TODO: Send params to the api for example
         
+        User *user = [[User alloc] init];
+        user.name = _usernameField.text;
+        user.password = _passwordField.text;
+        RLMRealm *realm = [RLMRealm defaultRealm];
+        [realm transactionWithBlock:^{
+            [realm addObject:user];
+        }];
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:NULL];
+        UITabBarController *tvc = [storyboard instantiateInitialViewController];
+        NSArray *vcs = [NSArray arrayWithObjects:tvc, nil];
+        [self.navigationController setViewControllers:vcs];
     }
 }
     

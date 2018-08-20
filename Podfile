@@ -3,9 +3,10 @@ platform :ios, '11.0'
 
 target 'Green' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+  use_frameworks!
 
   # Pods for Green
+  pod 'RealmSwift'
   pod 'Realm'
   pod 'FBSDKLoginKit'
   pod 'FBSDKCoreKit'
