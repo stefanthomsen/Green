@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		11DD5D312128BC3900D4EBE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D302128BC3900D4EBE5 /* AppDelegate.m */; };
-		11DD5D342128BC3900D4EBE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D332128BC3900D4EBE5 /* ViewController.m */; };
 		11DD5D372128BC3A00D4EBE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DD5D352128BC3A00D4EBE5 /* Main.storyboard */; };
 		11DD5D3A2128BC3A00D4EBE5 /* Green.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D382128BC3A00D4EBE5 /* Green.xcdatamodeld */; };
 		11DD5D3C2128BC3D00D4EBE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DD5D3B2128BC3D00D4EBE5 /* Assets.xcassets */; };
 		11DD5D3F2128BC3D00D4EBE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DD5D3D2128BC3D00D4EBE5 /* LaunchScreen.storyboard */; };
 		11DD5D422128BC3D00D4EBE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D412128BC3D00D4EBE5 /* main.m */; };
 		11DD5D4C2128BC3D00D4EBE5 /* GreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D4B2128BC3D00D4EBE5 /* GreenTests.m */; };
+		11DD5D5C2128C04600D4EBE5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D5B2128C04600D4EBE5 /* LoginViewController.m */; };
+		11DD5D5E212B5CB500D4EBE5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 11DD5D5D212B5CB400D4EBE5 /* README.md */; };
+		11DD5D61212B5D5E00D4EBE5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D60212B5D5E00D4EBE5 /* RegistrationViewController.swift */; };
 		3A2FB754D873BDEAB345EABC /* libPods-Green.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 107FD9106B78E8E27EB959DE /* libPods-Green.a */; };
 		D536000D4A7D6DE345708801 /* libPods-GreenTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4A41302B73FE047C5E9542 /* libPods-GreenTests.a */; };
 /* End PBXBuildFile section */
@@ -34,8 +36,6 @@
 		11DD5D2C2128BC3900D4EBE5 /* Green.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Green.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DD5D2F2128BC3900D4EBE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11DD5D302128BC3900D4EBE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		11DD5D322128BC3900D4EBE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		11DD5D332128BC3900D4EBE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		11DD5D362128BC3A00D4EBE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11DD5D392128BC3A00D4EBE5 /* Green.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Green.xcdatamodel; sourceTree = "<group>"; };
 		11DD5D3B2128BC3D00D4EBE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +45,11 @@
 		11DD5D472128BC3D00D4EBE5 /* GreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DD5D4B2128BC3D00D4EBE5 /* GreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenTests.m; sourceTree = "<group>"; };
 		11DD5D4D2128BC3D00D4EBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DD5D562128BE0800D4EBE5 /* Green-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Green-Bridging-Header.h"; sourceTree = "<group>"; };
+		11DD5D5A2128C04600D4EBE5 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		11DD5D5B2128C04600D4EBE5 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		11DD5D5D212B5CB400D4EBE5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		11DD5D60212B5D5E00D4EBE5 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		421D83372B4A612CCF462631 /* Pods-GreenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenTests/Pods-GreenTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E0B7CA87193072D24076997 /* Pods-Green.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green.release.xcconfig"; path = "Pods/Target Support Files/Pods-Green/Pods-Green.release.xcconfig"; sourceTree = "<group>"; };
 		A0D08D833520CD41D34EB1E4 /* Pods-Green.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Green/Pods-Green.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 		11DD5D232128BC3900D4EBE5 = {
 			isa = PBXGroup;
 			children = (
+				11DD5D5D212B5CB400D4EBE5 /* README.md */,
 				11DD5D2E2128BC3900D4EBE5 /* Green */,
 				11DD5D4A2128BC3D00D4EBE5 /* GreenTests */,
 				11DD5D2D2128BC3900D4EBE5 /* Products */,
@@ -95,16 +101,17 @@
 		11DD5D2E2128BC3900D4EBE5 /* Green */ = {
 			isa = PBXGroup;
 			children = (
+				11DD5D592128C03300D4EBE5 /* Login */,
+				11DD5D5F212B5D4900D4EBE5 /* Registration */,
 				11DD5D2F2128BC3900D4EBE5 /* AppDelegate.h */,
 				11DD5D302128BC3900D4EBE5 /* AppDelegate.m */,
-				11DD5D322128BC3900D4EBE5 /* ViewController.h */,
-				11DD5D332128BC3900D4EBE5 /* ViewController.m */,
 				11DD5D352128BC3A00D4EBE5 /* Main.storyboard */,
 				11DD5D3B2128BC3D00D4EBE5 /* Assets.xcassets */,
 				11DD5D3D2128BC3D00D4EBE5 /* LaunchScreen.storyboard */,
 				11DD5D402128BC3D00D4EBE5 /* Info.plist */,
 				11DD5D412128BC3D00D4EBE5 /* main.m */,
 				11DD5D382128BC3A00D4EBE5 /* Green.xcdatamodeld */,
+				11DD5D562128BE0800D4EBE5 /* Green-Bridging-Header.h */,
 			);
 			path = Green;
 			sourceTree = "<group>";
@@ -116,6 +123,23 @@
 				11DD5D4D2128BC3D00D4EBE5 /* Info.plist */,
 			);
 			path = GreenTests;
+			sourceTree = "<group>";
+		};
+		11DD5D592128C03300D4EBE5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				11DD5D5A2128C04600D4EBE5 /* LoginViewController.h */,
+				11DD5D5B2128C04600D4EBE5 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		11DD5D5F212B5D4900D4EBE5 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				11DD5D60212B5D5E00D4EBE5 /* RegistrationViewController.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		1385407133AE4F511921D486 /* Frameworks */ = {
@@ -149,6 +173,7 @@
 				11DD5D282128BC3900D4EBE5 /* Sources */,
 				11DD5D292128BC3900D4EBE5 /* Frameworks */,
 				11DD5D2A2128BC3900D4EBE5 /* Resources */,
+				7CD5DDAE47740E88D5972E5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,6 +214,7 @@
 				TargetAttributes = {
 					11DD5D2B2128BC3900D4EBE5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					11DD5D462128BC3D00D4EBE5 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -222,6 +248,7 @@
 			files = (
 				11DD5D3F2128BC3D00D4EBE5 /* LaunchScreen.storyboard in Resources */,
 				11DD5D3C2128BC3D00D4EBE5 /* Assets.xcassets in Resources */,
+				11DD5D5E212B5CB500D4EBE5 /* README.md in Resources */,
 				11DD5D372128BC3A00D4EBE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +281,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7CD5DDAE47740E88D5972E5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Green/Pods-Green-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Green/Pods-Green-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ADBF108AE251F1810976BA62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,10 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11DD5D342128BC3900D4EBE5 /* ViewController.m in Sources */,
+				11DD5D5C2128C04600D4EBE5 /* LoginViewController.m in Sources */,
 				11DD5D3A2128BC3A00D4EBE5 /* Green.xcdatamodeld in Sources */,
 				11DD5D422128BC3D00D4EBE5 /* main.m in Sources */,
 				11DD5D312128BC3900D4EBE5 /* AppDelegate.m in Sources */,
+				11DD5D61212B5D5E00D4EBE5 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +485,7 @@
 			baseConfigurationReference = A0D08D833520CD41D34EB1E4 /* Pods-Green.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G28XQH8SA5;
 				INFOPLIST_FILE = Green/Info.plist;
@@ -448,6 +495,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.com.Green;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Green/Green-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,6 +507,7 @@
 			baseConfigurationReference = 8E0B7CA87193072D24076997 /* Pods-Green.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G28XQH8SA5;
 				INFOPLIST_FILE = Green/Info.plist;
@@ -466,6 +517,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.com.Green;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Green/Green-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -474,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 421D83372B4A612CCF462631 /* Pods-GreenTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G28XQH8SA5;
@@ -494,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5488BA27D98EBD0ECB863BE /* Pods-GreenTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G28XQH8SA5;

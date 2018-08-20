@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Realm/Realm.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

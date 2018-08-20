@@ -6,7 +6,10 @@ target 'Green' do
   # use_frameworks!
 
   # Pods for Green
-
+  pod 'Realm'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKCoreKit'
+  
   target 'GreenTests' do
     inherit! :search_paths
     # Pods for testing
