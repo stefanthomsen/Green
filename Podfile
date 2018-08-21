@@ -10,6 +10,7 @@ target 'Green' do
   pod 'Realm'
   pod 'FBSDKLoginKit'
   pod 'FBSDKCoreKit'
+  pod 'Kingfisher'
   
   target 'GreenTests' do
     inherit! :search_paths

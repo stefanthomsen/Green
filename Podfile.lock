@@ -9,6 +9,7 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.33.0):
     - FBSDKCoreKit
+  - Kingfisher (4.8.0)
   - Realm (3.7.2):
     - Realm/Headers (= 3.7.2)
   - Realm/Headers (3.7.2)
@@ -18,6 +19,7 @@ PODS:
 DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
+  - Kingfisher
   - Realm
   - RealmSwift
 
@@ -26,6 +28,7 @@ SPEC REPOS:
     - Bolts
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - Kingfisher
     - Realm
     - RealmSwift
 
@@ -33,9 +36,10 @@ SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FBSDKCoreKit: 572b047a7e029bc44542bcf8a59414e7ff2b543e
   FBSDKLoginKit: 88cb456349cfb3b554427ce4f8b43729d85dfb40
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   Realm: dd18c3014e8d90df300b83c6da740067436089c5
   RealmSwift: 79917cae59a0c43ef8118b233a5978891dd50b4a
 
-PODFILE CHECKSUM: d46f7b1b8937486178819db55658c20e87b4919a
+PODFILE CHECKSUM: 16e60257bd5685a0484fc3c204490b9f3cda1dac
 
 COCOAPODS: 1.5.3

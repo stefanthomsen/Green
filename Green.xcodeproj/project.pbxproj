@@ -10,6 +10,8 @@
 		11449E15212B834E00229938 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11449E14212B834E00229938 /* User.swift */; };
 		11449E19212BFFA200229938 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11449E18212BFFA200229938 /* Global.swift */; };
 		11449E2A212CBDE100229938 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11449E29212CBDE100229938 /* UIViewControllerExtension.swift */; };
+		11449E2D212CC5CA00229938 /* TileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11449E2C212CC5CA00229938 /* TileCollectionViewCell.swift */; };
+		11449E2F212CC81700229938 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11449E2E212CC81700229938 /* DetailViewController.swift */; };
 		11DD5D312128BC3900D4EBE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D302128BC3900D4EBE5 /* AppDelegate.m */; };
 		11DD5D372128BC3A00D4EBE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DD5D352128BC3A00D4EBE5 /* Main.storyboard */; };
 		11DD5D3A2128BC3A00D4EBE5 /* Green.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11DD5D382128BC3A00D4EBE5 /* Green.xcdatamodeld */; };
@@ -40,6 +42,8 @@
 		11449E14212B834E00229938 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		11449E18212BFFA200229938 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		11449E29212CBDE100229938 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		11449E2C212CC5CA00229938 /* TileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileCollectionViewCell.swift; sourceTree = "<group>"; };
+		11449E2E212CC81700229938 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		11DD5D2C2128BC3900D4EBE5 /* Green.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Green.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DD5D2F2128BC3900D4EBE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11DD5D302128BC3900D4EBE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +114,14 @@
 				11449E29212CBDE100229938 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		11449E2B212CC5AB00229938 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11449E2C212CC5CA00229938 /* TileCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		11DD5D232128BC3900D4EBE5 = {
@@ -194,7 +206,9 @@
 		11DD5D63212B75BA00D4EBE5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				11449E2B212CC5AB00229938 /* Cell */,
 				11DD5D67212B76BC00D4EBE5 /* HomeViewController.swift */,
+				11449E2E212CC81700229938 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -375,6 +389,7 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -383,6 +398,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -398,12 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11449E2F212CC81700229938 /* DetailViewController.swift in Sources */,
 				11449E19212BFFA200229938 /* Global.swift in Sources */,
 				11DD5D5C2128C04600D4EBE5 /* LoginViewController.m in Sources */,
 				11449E2A212CBDE100229938 /* UIViewControllerExtension.swift in Sources */,
 				11DD5D3A2128BC3A00D4EBE5 /* Green.xcdatamodeld in Sources */,
 				11DD5D422128BC3D00D4EBE5 /* main.m in Sources */,
 				11DD5D312128BC3900D4EBE5 /* AppDelegate.m in Sources */,
+				11449E2D212CC5CA00229938 /* TileCollectionViewCell.swift in Sources */,
 				11DD5D61212B5D5E00D4EBE5 /* RegistrationViewController.swift in Sources */,
 				11DD5D68212B76BC00D4EBE5 /* HomeViewController.swift in Sources */,
 				11449E15212B834E00229938 /* User.swift in Sources */,

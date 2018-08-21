@@ -45,6 +45,11 @@
     //Launch Facebook SDK
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
+    
+    //SQLite location
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSLog(@"%@",[paths objectAtIndex:0]);
+    
     return YES;
 }
 
