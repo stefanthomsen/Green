@@ -83,16 +83,33 @@
             </objects>
             <point key="canvasLocation" x="765.60000000000002" y="-205.54722638680661"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="kVh-Ts-jc6">
             <objects>
-                <viewController id="NW9-Dm-t2m" sceneMemberID="viewController">
+                <viewController id="NW9-Dm-t2m" customClass="DetailViewController" customModule="Green" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pXG-4k-DEq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zRc-fD-z72">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <outlet property="delegate" destination="NW9-Dm-t2m" id="Rnd-76-0Jd"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f9X-A0-uma" firstAttribute="bottom" secondItem="zRc-fD-z72" secondAttribute="bottom" id="7Aa-Jl-QYd"/>
+                            <constraint firstItem="f9X-A0-uma" firstAttribute="trailing" secondItem="zRc-fD-z72" secondAttribute="trailing" id="PE5-ud-kHz"/>
+                            <constraint firstItem="zRc-fD-z72" firstAttribute="leading" secondItem="f9X-A0-uma" secondAttribute="leading" id="Uk0-Uz-ueC"/>
+                            <constraint firstItem="zRc-fD-z72" firstAttribute="top" secondItem="f9X-A0-uma" secondAttribute="top" id="f48-Dy-5b1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="f9X-A0-uma"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="zRc-fD-z72" id="eeg-XJ-hhx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDa-T8-Zqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

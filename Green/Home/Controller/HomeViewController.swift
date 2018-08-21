@@ -50,6 +50,7 @@ import Kingfisher
         }
     }
     
+    //TODO: Just an exemple to save data on Coredata. We should create a new class to handle coredate.
     private func saveMockdata(){
         self.clearDataBase()
         
@@ -113,6 +114,14 @@ import Kingfisher
         UIApplication.shared.keyWindow?.rootViewController = vc
         UIApplication.shared.keyWindow?.makeKeyAndVisible()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailViewController{
+            if let image = sender as? UIImage{
+                destination.image = image
+            }
+        }
+    }
 
 }
 
@@ -134,4 +143,11 @@ extension HomeViewController:UICollectionViewDataSource{
         return cell
     }
     
+}
+
+extension HomeViewController:UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! TileCollectionViewCell
+        self.performSegue(withIdentifier: "DetailView", sender: cell.tileImageView.image)
+    }
 }
