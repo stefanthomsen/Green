@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class User: Object {
+@objc class User: Object {
     @objc dynamic var name:String? = nil
     @objc dynamic var password:String? = nil
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RealmSwift
+import Realm
 
 class RegistrationViewController: UIViewController {
     @IBOutlet weak var usernameField:UITextField!
@@ -29,6 +31,21 @@ class RegistrationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onRegisterButtonPressed(){
+        if isCredencialsValid(){
+            let user = User()
+            user.name = usernameField.text
+            user.password = passwordField.text
+            Global.shared.save(user: user) { (success, error) in
+                if success{
+                    self.presentHomeViewController()
+                }else if let error = error{
+                    print(error)
+                }
+            }
+        }
+    }
+    
     func isCredencialsValid()->Bool{
         alertView.isHidden = true;
         
@@ -46,7 +63,7 @@ class RegistrationViewController: UIViewController {
         }
         if (password.count < 5){
             alertView.isHidden = true;
-            alertLabel.text = "Pasword must have at leat 5 characters";
+            alertLabel.text = "Password must have at leat 5 characters";
             return false;
         }
         return true;
@@ -57,7 +74,7 @@ class RegistrationViewController: UIViewController {
 extension RegistrationViewController:FBSDKLoginButtonDelegate{
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         //TODO: Check if was sucess login using facebook
-        
+        print("FACEBOOK CONNECT: \(result)")
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {

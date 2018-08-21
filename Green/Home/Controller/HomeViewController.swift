@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 @objc class HomeViewController: UIViewController {
     
@@ -23,6 +24,25 @@ import Foundation
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func logout(){
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.deleteAll()
+            }
+            self.presentLoginViewController()
+        }catch let error{
+            print("ERROR: \(error)")
+        }
+    }
+    
+    private func presentLoginViewController(){
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateInitialViewController()
+        UIApplication.shared.keyWindow?.rootViewController = vc
+        UIApplication.shared.keyWindow?.makeKeyAndVisible()
     }
 
 }

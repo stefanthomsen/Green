@@ -133,7 +133,7 @@
                                         <rect key="frame" x="143" y="100" width="57" height="30"/>
                                         <state key="normal" title="Register"/>
                                         <connections>
-                                            <action selector="onLoginButtonPresed:" destination="PSJ-nr-Ktf" eventType="touchUpInside" id="rj9-WI-loD"/>
+                                            <action selector="onRegisterButtonPressed" destination="PSJ-nr-Ktf" eventType="touchUpInside" id="aKx-ba-QzG"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vF-bg-I7b">

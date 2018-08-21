@@ -10,6 +10,7 @@
 #import <Green/Green-Swift.h>
 #import <Realm/Realm.h>
 
+
 @interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
@@ -25,6 +26,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self checkIfUserExist];
+}
+
+-(void)checkIfUserExist{
+    
+    User *user = [[Global shared] getUser];
+    if (user != nil){
+        [self presentHomeViewController];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,16 +50,22 @@
         User *user = [[User alloc] init];
         user.name = _usernameField.text;
         user.password = _passwordField.text;
-        RLMRealm *realm = [RLMRealm defaultRealm];
-        [realm transactionWithBlock:^{
-            [realm addObject:user];
-        }];
         
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:NULL];
-        UITabBarController *tvc = [storyboard instantiateInitialViewController];
-        NSArray *vcs = [NSArray arrayWithObjects:tvc, nil];
-        [self.navigationController setViewControllers:vcs];
+        [[Global shared] saveWithUser:user completionHandler:^(BOOL success, NSError *error) {
+            if (success){
+                [self presentHomeViewController];
+            }else{
+                NSLog(@"ERROR: %@", error);
+            }
+        }];        
     }
+}
+
+- (void)presentHomeViewController{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:NULL];
+    UITabBarController *tvc = [storyboard instantiateInitialViewController];
+    NSArray *vcs = [NSArray arrayWithObjects:tvc, nil];
+    [self.navigationController setViewControllers:vcs];
 }
     
 - (IBAction)onRegisterButtonPressed:(id)sender{
@@ -65,7 +82,7 @@
     
     if (_passwordField.text.length < 5){
         _alertView.hidden = FALSE;
-        _alertLabel.text = @"Pasword must have at leat 5 characters";
+        _alertLabel.text = @"Password must have at leat 5 characters";
         return FALSE;
     }
     
